@@ -1,32 +1,27 @@
-const SentraCore = require('./core');
+const SemanticMemory = require('./memory/SemanticMemory');
 
 async function testMemory() {
-    console.log('--- Testing Semantic Memory ---');
+    console.log('--- Testing SQLite Vector Memory ---');
+    const memory = new SemanticMemory('./data');
+    await memory.initialize();
 
-    const core = new SentraCore();
-    await core.start();
+    console.log('[Test] Adding memory: "Sentra is built with modular skills and sqlite memory."');
+    await memory.add('Sentra is built with modular skills and sqlite memory.', { type: 'fact' });
 
-    // 1. Store a memory directly
-    console.log('\n[Test] Storing memory via tool...');
-    await core.agent.components.tools.execute('store_memory', {
-        content: 'Sentra is a local-first autonomous agent created by the Google Deepmind team.'
+    console.log('[Test] Searching: "What is Sentra built with?"');
+    const results = await memory.search('What is Sentra built with?', 3);
+
+    console.log('\n[Results]:');
+    results.forEach(r => {
+        console.log(`- Score: ${r.distance ? r.distance : 'N/A'}`);
+        console.log(`  Content: ${r.content}`);
     });
 
-    // 2. Recall memory via retrieval
-    console.log('\n[Test] Recalling memory via tool...');
-    const result = await core.agent.components.tools.execute('recall_memory', {
-        query: 'who created sentra?'
-    });
-
-    console.log('[Test] Recall Result:', result);
-
-    if (result.toLowerCase().includes('google deepmind')) {
-        console.log('[Test] SUCCESS: Retrieved correct information.');
+    if (results.length > 0 && results[0].content.includes('modular skills')) {
+        console.log('\nSUCCESS: Memory retrieved correctly.');
     } else {
-        console.error('[Test] FAILURE: Did not retrieve correct information.');
+        console.error('\nFAILURE: Could not retrieve relevant memory.');
     }
-
-    await core.stop();
 }
 
 testMemory().catch(console.error);

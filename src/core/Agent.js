@@ -16,40 +16,46 @@ class Agent extends EventEmitter {
             pipeline: null
         };
         this.context = {};
+        this.abortSignal = false;
     }
 
     /**
      * Start the agent with a specific task
      */
+    log(message) {
+        console.log(message);
+        this.emit('log', message);
+    }
+
     async startTask(taskDescription) {
         try {
             if (this.state !== 'IDLE') {
                 throw new Error(`Cannot start task in state: ${this.state}`);
             }
 
+            this.abortSignal = false;
+
             // 1. INIT_TASK
             await this.transition('INIT', async () => {
-                console.log('[Agent] Initializing Task...');
+                this.log('[Agent] Initializing Task...');
                 this.context.task = taskDescription;
                 this.context.startTime = Date.now();
             });
 
             // 2. LOAD_CAPABILITIES
             await this.transition('LOAD', async () => {
-                console.log('[Agent] Loading Capabilities...');
-                // In a real impl, this would load tools from registry
-                if (this.components.tools) await this.components.tools.load();
+                this.log('[Agent] Loading Capabilities (Pre-loaded)...');
             });
 
             // 3. ALLOCATE_MODELS
             await this.transition('ALLOCATE', async () => {
-                console.log('[Agent] Allocating Models...');
+                this.log('[Agent] Allocating Models...');
                 if (this.components.models) await this.components.models.allocate();
             });
 
             // 4. INIT_WORKING_MEMORY
             await this.transition('MEM_INIT', async () => {
-                console.log('[Agent] Initializing Working Memory...');
+                this.log('[Agent] Initializing Working Memory...');
                 if (this.components.memory) {
                     await this.components.memory.initialize(this.context.task);
                 }
@@ -57,7 +63,7 @@ class Agent extends EventEmitter {
 
             // 5. LOOP
             await this.transition('LOOP', async () => {
-                console.log('[Agent] Entering Execution Loop...');
+                this.log('[Agent] Entering Execution Loop...');
                 if (this.components.pipeline) {
                     const result = await this.components.pipeline.execute(this.context);
                     this.context.result = result;
@@ -80,10 +86,17 @@ class Agent extends EventEmitter {
      * Transition to a new state with side effects
      */
     async transition(newState, action) {
-        console.log(`[State] ${this.state} -> ${newState}`);
+        this.log(`[State] ${this.state} -> ${newState}`);
         this.state = newState;
         this.emit('stateChange', { state: newState });
         if (action) await action();
+    }
+
+    stop() {
+        if (this.state !== 'IDLE') {
+            this.abortSignal = true;
+            this.log('[Agent] 🛑 Stop Signal Received. Terminating...');
+        }
     }
 }
 

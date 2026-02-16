@@ -19,6 +19,11 @@ class Pipeline {
             stepCount++;
             console.log(chalk.gray(`[Pipeline] Step ${stepCount}/${this.maxSteps}`));
 
+            if (this.agent.abortSignal) {
+                console.warn(chalk.red('[Pipeline] Execution Aborted by User.'));
+                return "🛑 Task Terminated by User.";
+            }
+
             // 1. PLAN
             const step = await this.plan(context);
 

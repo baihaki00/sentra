@@ -49,45 +49,10 @@ class SentraCore {
       return args.text;
     }, {});
 
-    // Register System Tools
-    const SystemTools = require('./tools/SystemTools');
-    const systemTools = new SystemTools();
-    this.agent.components.tools.register('cmd', (args) => systemTools.cmd(args), {});
-    this.agent.components.tools.register('get_os_info', (args) => systemTools.get_os_info(), {});
-
-    // Register FileSystem Tools
-    const FileSystemTools = require('./tools/FileSystemTools');
-    const fsTools = new FileSystemTools(process.cwd());
-    this.agent.components.tools.register('read_file', (args) => fsTools.read_file(args), {});
-    this.agent.components.tools.register('write_file', (args) => fsTools.write_file(args), {});
-    this.agent.components.tools.register('list_dir', (args) => fsTools.list_dir(args), {});
-
-    // Register Browser Tools
-    const BrowserTools = require('./tools/BrowserTools');
-    const browserTools = new BrowserTools();
-    this.agent.components.tools.register('browser_open', (args) => browserTools.browser_open(args), {});
-    this.agent.components.tools.register('browser_type', (args) => browserTools.browser_type(args), {});
-    this.agent.components.tools.register('browser_click', (args) => browserTools.browser_click(args), {});
-    this.agent.components.tools.register('browser_read', (args) => browserTools.browser_read(args), {});
-    this.agent.components.tools.register('browser_close', (args) => browserTools.browser_close(args), {});
-    this.agent.components.tools.register('browser_press_key', (args) => browserTools.browser_press_key(args), {});
-    this.agent.components.tools.register('google_search', (args) => browserTools.google_search(args), {});
-
-    // Register Memory Tools
-    this.agent.components.tools.register('store_memory', async (args) => {
-      await this.agent.components.memory.semantic.add(args.content, { source: 'user_tool' });
-      return 'Memory stored successfully.';
-    }, {});
-    this.agent.components.tools.register('recall_memory', async (args) => {
-      const results = await this.agent.components.memory.semantic.search(args.query);
-      return JSON.stringify(results.map(r => r.content));
-    }, {});
-
-    // Register Code Execution Tools
-    const CodeExecutor = require('./tools/CodeExecutor');
-    const codeExecutor = new CodeExecutor();
-    this.agent.components.tools.register('execute_javascript', (args) => codeExecutor.execute_javascript(args), {});
-    this.agent.components.tools.register('execute_python', (args) => codeExecutor.execute_python(args), {});
+    // Tools are now loaded via SkillLoader in src/skills/
+    const SkillLoader = require('./core/SkillLoader');
+    const skillLoader = new SkillLoader(this.agent.components.tools);
+    await skillLoader.loadSkills();
 
     console.log('Sentra Core initialized successfully');
   }
