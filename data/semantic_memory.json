@@ -1,0 +1,80 @@
+[
+  {
+    "id": "c9894bc6-4053-4266-9023-6a04fe165098",
+    "content": "Sentra is a local-first autonomous agent created by the Google Deepmind team.",
+    "metadata": {
+      "source": "user_tool"
+    },
+    "timestamp": 1771211902223,
+    "keywords": [
+      "sentra",
+      "local-first",
+      "autonomous",
+      "agent",
+      "created",
+      "google",
+      "deepmind",
+      "team"
+    ]
+  },
+  {
+    "id": "9017aeff-74f1-4d98-b6ba-154eb67a896a",
+    "content": "my favourite color is blue",
+    "metadata": {
+      "source": "user_tool"
+    },
+    "timestamp": 1771211997401,
+    "keywords": [
+      "favourite",
+      "color",
+      "blue"
+    ]
+  },
+  {
+    "id": "21744aa6-4c9f-48b9-a9c9-3a5a7e24d486",
+    "content": "my name is Bai",
+    "metadata": {
+      "source": "user_tool"
+    },
+    "timestamp": 1771212955699,
+    "keywords": [
+      "name",
+      "bai"
+    ]
+  },
+  {
+    "id": "09f2cb4f-9378-4abf-96f9-fbad655c28ee",
+    "content": "My favourite color is red",
+    "metadata": {
+      "source": "user_tool"
+    },
+    "timestamp": 1771213023659,
+    "keywords": [
+      "favourite",
+      "color",
+      "red"
+    ]
+  },
+  {
+    "id": "3cb7375c-e82b-423f-846d-992f5d810e7a",
+    "content": "180",
+    "metadata": {
+      "source": "user_tool"
+    },
+    "timestamp": 1771214213184,
+    "keywords": [
+      "180"
+    ]
+  },
+  {
+    "id": "8d18f759-747a-4c4a-b476-ba822e6e4458",
+    "content": "15000",
+    "metadata": {
+      "source": "user_tool"
+    },
+    "timestamp": 1771214273680,
+    "keywords": [
+      "15000"
+    ]
+  }
+]

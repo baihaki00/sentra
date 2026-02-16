@@ -1,0 +1,8 @@
+node_modules/
+.env
+.DS_Store
+*.log
+brain/
+artifacts/
+tmp/
+src/memory/data/

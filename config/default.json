@@ -1,0 +1,35 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "security": {
+    "enableSandbox": true,
+    "permissions": {
+      "fileAccess": "restricted",
+      "networkAccess": "controlled",
+      "processExecution": "monitored"
+    }
+  },
+  "models": {
+    "default": "qwen-portal/coder-model",
+    "fallback": "ollama/gemma3:4b",
+    "maxConcurrency": 4
+  },
+  "plugins": {
+    "enabled": true,
+    "autoLoad": true,
+    "directories": ["./plugins", "./custom-plugins"]
+  },
+  "memory": {
+    "maxSizeMB": 1024,
+    "autoSaveIntervalMS": 300000,
+    "retentionDays": 30
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/closedclaw.log",
+    "maxFileSizeMB": 10,
+    "maxFiles": 5
+  }
+}
