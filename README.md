@@ -1,69 +1,80 @@
-# Sentra AI 🧠🤖
+# Sentra Genesis v0.2 🧠⚡
 
-**Sentra** is a powerful, local-first autonomous agent designed to be your personal digital assistant. Built on a "Thinking" architecture (ReAct), Sentra plans its actions, executes them using a suite of tools, and learns from its experiences.
+**Sentra** is an ultra-lightweight, **Zero-LLM** autonomous agent designed for instant responsiveness and stable long-term memory. Unlike heavy LLM-based agents, Sentra runs entirely on local heuristic algorithms, graph theory, and semantic vectorization.
 
-> **"Jarvis-like" intelligence, running entirely on your machine.**
+> **"Intelligence without the hallucination."**
 
-## ✨ Features
+## ✨ Key Features
 
-- **🧠 Local Intelligence**: Powered by **Ollama** (default: `qwen3:8b`), keeping your data private and offline-capable.
-- **🔎 Autonomous Research**: Equipped with a stealth browser (Puppeteer) to search DuckDuckGo, read websites, and synthesize information without getting blocked.
-- **💻 Code Execution**: safely writes and runs **JavaScript** and **Python** code to solve complex math or logic tasks.
-- **💾 Long-Term Memory**: Remembers facts and context across sessions using a local JSON vector store.
-- **🛡️ Robust & Reliable**: Uses a strict **Plan -> Act -> Observe** loop to prevent hallucinations and loops.
-- **CLI Interface**: A beautiful, interactive terminal UI with animated spinners and colorful output.
+- **⚡ Instant Response**: Heuristic intent classification (V4) responds in milliseconds.
+- **🧠 Persistent Knowledge Graph**: Remembers facts, relationships, and conversations across sessions. Knowledge is stored locally in `data/memory.json`.
+- **🗣️ Natural Language Teaching**: Teach Sentra new concepts simply by talking (`"cat is an animal"`).
+- **🌱 Active Curiosity**: Sentra asks clarifying questions when it encounters unknown terms instead of hallucinating answers.
+- **🔌 Offline First**: No API keys, no heavy model weights (unless using optional LLM plugins).
 
-## 🚀 Installation
+## 🚀 Getting Started
 
 ### Prerequisites
-1.  **Node.js**: v18 or higher.
-2.  **Ollama**: [Download and install Ollama](https://ollama.com).
-3.  **Python**: (Optional) For Python code execution capabilities.
+- **Node.js**: v18 or higher
 
-### Setup
+### Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/baihaki00/sentra.git
 cd sentra
-
-# Install dependencies
 npm install
-
-# Pull the default model (or use your own)
-ollama pull qwen3:8b
 ```
 
-## 🎮 Usage
-
-Start the agent:
+### Running
 
 ```bash
-node src/cli.js
+# Start the interactive agent (Clean UI)
+npm run sentra
 ```
 
-### Example Commands
+Or for verbose debugging:
+```bash
+node src/genesis/Kernel.js
+```
 
-- **Research**: "Search for the latest news on SpaceX and summarize it."
-- **Coding**: "Write a Python script to calculate the first 100 Fibonacci numbers."
-- **Memory**: "My favorite color is blue." -> (Later) -> "What is my favorite color?"
-- **General**: "Who is Jeffrey Epstein?" (Sentra will research and provide a factual answer).
+## 🎮 Interaction Examples
 
-## 🛠️ Architecture
+**Teaching & Recall:**
+```text
+You > cat is an animal.
+Sentra > Noted.
 
-Sentra operates on a **Loop**:
-1.  **INIT**: Loads tools and connects to Ollama.
-2.  **PLAN**: The LLM generates a thought process based on the user request.
-3.  **ACT**: Executes a specific tool (e.g., `google_search`, `execute_python`).
-4.  **OBSERVE**: Reads the tool output.
-5.  **REFLECT**: Decides whether the task is complete or needs more steps.
+You > What is a cat?
+Sentra > cat is a animal.
+```
 
-## 🗺️ Roadmap
+**Curiosity & Learning:**
+```text
+You > I like python.
+Sentra > That's new to me. What does "python" mean?
 
-- [ ] **Voice Interaction**: Text-to-Speech (TTS) and Speech-to-Text (STT).
-- [ ] **Vision**: Ability to "see" and analyze screen content.
-- [ ] **Scheduling**: Autonomous background task execution.
+You > python is a coding language.
+Sentra > Understood. "python" is now a known concept.
+```
+
+## 🛠️ Architecture (Genesis v0.2)
+
+Sentra uses a 7-stage cognitive pipeline:
+
+1.  **Tokenization**: Punctuation-aware input parsing.
+2.  **Perception**: Maps inputs to Knowledge Graph nodes (`Scaffold.js`).
+3.  **Entity Resolution**: Extracts subjects/objects and resolves types (`Entity.js`).
+4.  **Intent Classification**: Hybrid Heuristic + Semantic classification (`Intent.js`). Includes "Topic Resume" logic to handle implicit context.
+5.  **Expectation**: Predicts likely user intent based on history (`Expectation.js`).
+6.  **Response Generation**: Generates dynamic output using linguistic patterns (`Linguistics.js`).
+7.  **Reflection**: Background graph optimization and consolidation (`Reflection.js`).
+
+## 📂 Project Structure
+
+- `src/genesis/`: Core cognitive kernel.
+- `src/sentra.js`: Clean CLI wrapper.
+- `data/seeds/`: Initial knowledge base (e.g., `basic_concepts.json`).
+- `Legacy_Hydra/`: Previous LLM-based implementation (archived).
 
 ## 📄 License
-
 MIT
