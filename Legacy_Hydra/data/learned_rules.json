@@ -1,0 +1,172 @@
+[
+  {
+    "trigger": "stock_price_query",
+    "guideline": "Use web_search to retrieve the latest price information. Extract the price from the snippet and include it in final_answer.",
+    "timestamp": "2026-02-17T06:43:00.000Z"
+  },
+  {
+    "trigger": "web_fetch_failure",
+    "guideline": "If web_fetch fails or returns generic text, switch to browser_open immediately.",
+    "timestamp": "2026-02-17T07:10:00.000Z"
+  },
+  {
+    "trigger": "text_extraction_failure",
+    "guideline": "If browser_read content is irrelevant (e.g. navigation, ads) or lacks the specific data (price/stat), DO NOT RETRY reading. Use `browser_screenshot` + `analyze_image` to see the answer visually.",
+    "timestamp": "2026-02-17T07:30:00.000Z"
+  },
+  {
+    "trigger": "quantitative_query",
+    "guideline": "For prices, dates, or stats, the final_answer MUST contain the actual number. Fetch it if the snippet lacks it.",
+    "timestamp": "2026-02-17T07:20:00.000Z"
+  },
+  {
+    "trigger": "code_modification",
+    "guideline": "Always read the file content before writing to ensure accurate updates. Create a backup first.",
+    "timestamp": "2026-02-16T14:48:57.672Z"
+  },
+  {
+    "trigger": "file_not_found",
+    "guideline": "Always use list_dir to verify files exist before attempting to modify them.",
+    "timestamp": "2026-02-16T15:47:47.560Z"
+  },
+  {
+    "trigger": "web_fetch",
+    "guideline": "Prioritize fetching from the exact URL provided in search results to ensure direct access to the target data.",
+    "timestamp": "2026-02-17T07:48:33.120Z"
+  },
+  {
+    "trigger": "plan_selection",
+    "guideline": "When multiple plans are functionally identical, select the first plan to maintain consistency and reduce redundant processing.",
+    "timestamp": "2026-02-17T07:48:33.120Z"
+  },
+  {
+    "trigger": "skill_used",
+    "guideline": "Skip previously used skills to prevent redundant operations and loops.",
+    "timestamp": "2026-02-17T09:08:08.475Z"
+  },
+  {
+    "trigger": "cognitive_deliberation",
+    "guideline": "Prioritize System 2 thinking for complex decisions to ensure optimal plan selection.",
+    "timestamp": "2026-02-17T09:08:08.475Z"
+  },
+  {
+    "trigger": "file_modified",
+    "guideline": "Always create a backup before modifying files to safeguard against errors.",
+    "timestamp": "2026-02-17T09:08:08.475Z"
+  },
+  {
+    "trigger": "user_feedback",
+    "guideline": "Include final_answer with confirmation messages for file operations to enhance user clarity.",
+    "timestamp": "2026-02-17T09:08:08.475Z"
+  },
+  {
+    "trigger": "math_operation",
+    "guideline": "Resolve mathematical calculations directly without external dependencies when feasible.",
+    "timestamp": "2026-02-17T09:08:08.475Z"
+  },
+  {
+    "trigger": "skill_hit",
+    "guideline": "Skip previously used skills to prevent redundant or looping actions.",
+    "timestamp": "2026-02-17T09:08:30.573Z"
+  },
+  {
+    "trigger": "file_modified",
+    "guideline": "Always create a backup before modifying files to ensure recoverability.",
+    "timestamp": "2026-02-17T09:08:30.573Z"
+  },
+  {
+    "trigger": "code_generation",
+    "guideline": "Use write_code directly for straightforward tasks without unnecessary search steps.",
+    "timestamp": "2026-02-17T09:08:30.573Z"
+  },
+  {
+    "trigger": "web_search",
+    "guideline": "If a web_search snippet provides the answer, finalize with a concise response without additional steps.",
+    "timestamp": "2026-02-17T09:08:30.573Z"
+  },
+  {
+    "trigger": "multiple_plans",
+    "guideline": "Engage System 2 deliberation (Tree of Thoughts) when evaluating multiple plan options for efficiency and correctness.",
+    "timestamp": "2026-02-17T09:08:30.573Z"
+  },
+  {
+    "trigger": "skill_used",
+    "guideline": "If a skill provides sufficient information, directly use it to form a final answer without additional steps.",
+    "timestamp": "2026-02-17T09:09:27.969Z"
+  },
+  {
+    "trigger": "repeated_skill_use",
+    "guideline": "Skip previously used skills to prevent redundant steps and loops.",
+    "timestamp": "2026-02-17T09:09:27.969Z"
+  },
+  {
+    "trigger": "file_creation",
+    "guideline": "Always back up files before modifying them to ensure data safety.",
+    "timestamp": "2026-02-17T09:09:27.969Z"
+  },
+  {
+    "trigger": "code_generation",
+    "guideline": "For straightforward code generation tasks, use write_code directly without unnecessary confirmation steps.",
+    "timestamp": "2026-02-17T09:09:27.969Z"
+  },
+  {
+    "trigger": "task_completion",
+    "guideline": "Use final_answer to present the result clearly once the task is completed.",
+    "timestamp": "2026-02-17T09:09:27.969Z"
+  },
+  {
+    "trigger": "direct_answer",
+    "guideline": "Prioritize concise, direct answers over unnecessary elaboration or formatting.",
+    "timestamp": "2026-02-17T09:10:49.186Z"
+  },
+  {
+    "trigger": "code_generation",
+    "guideline": "Use write_code directly for straightforward tasks without requiring external searches.",
+    "timestamp": "2026-02-17T09:10:49.186Z"
+  },
+  {
+    "trigger": "multiple_plans",
+    "guideline": "Select the most efficient plan during deliberation to minimize steps and maximize clarity.",
+    "timestamp": "2026-02-17T09:10:49.186Z"
+  },
+  {
+    "trigger": "file_creation",
+    "guideline": "Use write_code directly for creating files without redundant existence checks.",
+    "timestamp": "2026-02-17T09:56:20.898Z"
+  },
+  {
+    "trigger": "backup_required",
+    "guideline": "Rely on automatic backup handling instead of manual intervention.",
+    "timestamp": "2026-02-17T09:56:20.898Z"
+  },
+  {
+    "trigger": "undefined_property_error",
+    "guideline": "Check for undefined variables before accessing properties to prevent runtime errors.",
+    "timestamp": "2026-02-17T09:56:20.898Z"
+  },
+  {
+    "trigger": "task_completion",
+    "guideline": "Automatically store successful workflows as reusable skills for future tasks.",
+    "timestamp": "2026-02-17T09:56:20.898Z"
+  },
+  {
+    "trigger": "path_argument",
+    "guideline": "Ensure the 'path' argument is a valid string before executing the skill.",
+    "timestamp": "2026-02-17T10:49:47.860Z"
+  },
+  {
+    "trigger": "json_parsing_error",
+    "guideline": "Validate JSON input format before processing to avoid parsing failures.",
+    "timestamp": "2026-02-17T10:49:47.860Z"
+  },
+  {
+    "trigger": "premature_final_answer",
+    "guideline": "Delay final_answer until data is fully retrieved and validated.",
+    "timestamp": "2026-02-17T10:49:47.860Z"
+  },
+  {
+    "trigger": "arithmetic_calculation",
+    "guideline": "Use direct computation for arithmetic tasks instead of external tools.",
+    "timestamp": "2026-02-17T10:49:47.860Z"
+  }
+]

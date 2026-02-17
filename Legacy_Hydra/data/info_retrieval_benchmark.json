@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-02-16T18:21:05.774Z",
+  "total": 30,
+  "passed": 30,
+  "failed": 0,
+  "totalTime": 4400,
+  "timings": [
+    {
+      "name": "web_fetch (example.com)",
+      "time": 45
+    },
+    {
+      "name": "web_fetch (cached)",
+      "time": 28
+    },
+    {
+      "name": "web_search (javascript)",
+      "time": 867
+    },
+    {
+      "name": "web_search (cached)",
+      "time": 0
+    },
+    {
+      "name": "web_search (tesla stock)",
+      "time": 1010
+    },
+    {
+      "name": "browser_open (first launch)",
+      "time": 720
+    },
+    {
+      "name": "browser_open (already open)",
+      "time": 754
+    },
+    {
+      "name": "Comparison: WebFetcher",
+      "time": 51
+    },
+    {
+      "name": "Comparison: BrowserTools",
+      "time": 736
+    }
+  ]
+}

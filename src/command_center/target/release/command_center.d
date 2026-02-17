@@ -1,0 +1,1 @@
+D:\ClosedClaw\src\command_center\target\release\command_center.exe: D:\ClosedClaw\src\command_center\src\graph.rs D:\ClosedClaw\src\command_center\src\kernel_ops.rs D:\ClosedClaw\src\command_center\src\main.rs D:\ClosedClaw\src\command_center\src\telemetry.rs

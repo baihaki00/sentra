@@ -1,0 +1,141 @@
+[workflow optimization + iterative learning]
+
+
+Sentra can take an unfamiliar workflow overtime!
+
+for example when being asked
+
+Go to apple.com and describe the first banner that you see, Sentra try the flow, and may hit some couple of time.
+
+But then, Sentra "learn from mistakes" and optimize this unfamiliar workflow.
+
+It's like learning a new skill, and familiar self with that particular task.
+
+The next time, Sentra is assigned to do the "similar" task, its going to pickup where he left off.
+
+"Ah this task, I remember this, I know how to do it", instead of thinking "Hm what should I do?"
+
+
+This workflow or familiar task optimization may boost Sentra productivity.
+
+Sentra may also collects data from the results from his tasks such as how much time were spent on that particular task, and the next time similar task was handed, it's going to aim for faster response, beating his own record time. Or, retrieve similar information,
+
+[Creator VS Sentra]
+
+
+In this particular scenario, imagine sentra is doing his tasks as usual.
+
+The creator may ask sentra some questions that the creator already know.
+
+For example, the creator asks sentra, "Go to apple.com and look describe the banner that you see"
+
+Sentra may hallucinate and say 2 instead of 3. and the Creator says ""Wrong, do it again".
+
+
+This two particular features, do we already have it? or is there something similar already?, if we do have them, can we optimize and do improvements on it? 
+
+[problems]
+- Sentra hallucinates a lot, often times i see him being overconfident in decision-making, but that involves in the model himself, but i see it as a mould of the brain, the casting mold, we can also switch them or train as our own, fine tuning models, to make it more 'Sentra', give Sentra real identity, and recognize himself.
+- Sentra config for filepaths must be prioritized, I see a lot of ACT ERROR when it involves file directory tasks..maybe we can do something or some type of helpers here
+
+
+-----------------------------------
+
+[Self-Evolving]
+
+This may be a bit futuristic, but I want Sentra to be very good at improving himself on its own without creator's interference. Sentra may run locally, but unlike many "chatbots", they only answer, when there's an input, and produce output. I want sentra to be able to debug his own codebase, and see what's missing, inspect the errors, suggest improvements and act on his own.
+
+There's actually no workflow for this for now and i literally have no idea if this is going to work. One thing about this particular feature is, what if Sentra accidentally delete his own files or worse; delete his entire codebase and identity, its like, killing himself. Like, a human jumping out from a hotel building with short ETA to the floor and poof.
+
+One particular idea is Sentra making backups on its one, and a runner which executes himself, plan > code > execute and unit test for each new features, this could work, but the work is going to accumulates so much, I need to know that the runner works perfectly, and alot of failsafe and fallback mechanisms.
+
+
+-----------------------------------
+
+[Simplicity beats 100+ features]
+
+**Complexity of code ≠ intelligence.**  
+Intelligence comes from **structure, feedback, and learning**, not line count.
+
+### Why the 100-line version wins
+
+- **Intelligence is an emergent property**, not a handcrafted one  
+    Brains aren’t billions of instructions — they’re **simple rules + massive parallel learning**.
+    
+- **Compression = understanding**  
+    The smartest systems are the most _compressed_.  
+    If you need billions of lines to “force” intelligence, you don’t understand it.
+    
+- **Nature’s proof**
+    
+    - DNA is tiny
+        
+    - Neurons follow simple rules
+        
+    - Consciousness still emerges
+        
+
+That’s not accidental.
+
+Thats true in some extents, for example our brain can just run around 20Watt of power only, while to run a single LLM, you need quite good setup of CPU, GPU VRAM and RAM just to calculate math inferences just to produce texts and you need high power of electrical energy. Shows that the creator of humans were the All-Knowing and All-Knowledgeable. So what im trying to say is, is super super possible to run simple llm model but could do many stuff as long as we give them tools to, and also crazy optimization locally, maybe a new type of architecture for inferences. There are practical and theoretical techniques that significantly speed up inference and reduce power compared with naive transformer implementation. Many of these are already published as preprints or early systems; some are integrated into production toolkits (like FlashAttention improvements and sparse attention kernels on GPUs). Others (neuromorphic, spike LLMs, analog in-memory) are still mostly at research stage or prototype hardware level. Deployment in mainstream AI services exists but is still limited.
+
+If my focus is practical utilization right now, the biggest wins come from quantization, sparse attention, memory-efficient caching, and optimized GPU kernels. Architectures like SSM/Mamba and parallel decoding are promising next-gen approaches, you may come up with your opinions too. This is also your project.
+
+[workflow combination]
+
+Since Sentra learn workflows and learn skill and collect knowledges on the go, Sentra also can combine workflows, forming new complex workflows that he can remember, intertwining tasks becoming one like threads, but still work effectively. i wanna focus on usability of the ai model itself, not just asking him questions, but make him "do" stuff and learn from it, doesnt forget and doesnt age and forever evolving, making the only limit is the creator himself; me.
+
+
+[reflections]
+
+on idle, Sentra may be on reflections mode, where he look at its own data, refining, fix broken data, and do backups regularly somewhere locally. Sentra's knowledge will grow, exponentially, and without reflections or refinement and good recalling, its pretty much useless, so this one is a need.
+
+[+trading]
+
+Trading. This feature should be completely separate or just another +1 skill for Sentra, it shouldnt be a core module, it should be "built-in", on-the-house kind of thing, Since Sentra can do almost anything in any domain, as long as its on my computer, basically a breathing powerful local and private (just for me) Sovereign Agent.
+
+One of the ultimate objectives behind building Sentra is to test whether a self-evolving, tool-using agent can operate in the most adversarial civilian environment available: financial markets.
+
+Trading is not just a technical task. It combines uncertainty, incomplete information, non-stationary dynamics, game theory, risk mathematics, psychology, and strict execution discipline. It punishes overconfidence, ambiguity, and inconsistency. Survival requires probabilistic thinking under continuous pressure.
+
+If human traders can develop edge through structured reasoning, statistical validation, and disciplined risk control, then an artificial agent should theoretically be able to do the same—provided it is designed with constraint, auditability, and adaptation mechanisms.
+
+Therefore, trading is not pursued for money alone. It is used as a benchmark environment.
+
+It tests whether Sentra can:
+
+Operate under uncertainty without hallucination
+
+Respect immutable risk constraints
+
+Maintain behavioral consistency over long horizons
+
+Learn from logged outcomes without destabilizing itself
+
+Distinguish signal from noise in a non-deterministic system
+
+Refuse action when conditions are not satisfied
+
+Markets are adversarial and adaptive. Any weakness in reasoning, memory, execution fidelity, or constraint enforcement will surface quickly. In that sense, trading becomes a stress test of architecture integrity.
+
+If Sentra can:
+
+Survive statistically meaningful trade volumes,
+
+Control drawdown,
+
+Maintain disciplined execution,
+
+Improve decision quality through structured evaluation,
+
+then it demonstrates more than trading skill. It demonstrates cognitive stability under pressure.
+
+Trading is the ultimate decider not because it guarantees wealth, but because it exposes whether Sentra is a disciplined system or a fragile improviser.
+
+The objective is not to build a gambler.
+The objective is to build a system that can survive and adapt inside the hardest open environment available. And lastly, of course, make me money from automated trading hahah. like why not, more money means we could boost the growth of Sentra too.
+
+
+
+
+

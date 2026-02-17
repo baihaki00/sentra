@@ -1,0 +1,40 @@
+[
+  {
+    "id": "2125650b-ceb3-48a1-a193-452ae9be334d",
+    "prompt": "What is the square root of 67890?",
+    "type": "MATH",
+    "complexity": "SIMPLE",
+    "timestamp": "2026-02-17T09:43:04.726Z",
+    "runs": [
+      {
+        "attempt": 1,
+        "start": 1771321384726,
+        "cognitive_system": "SYSTEM_2",
+        "tool_calls": [
+          "final_answer"
+        ],
+        "logs": [
+          "[State] IDLE -> INIT",
+          "[Agent] Initializing Task...",
+          "[State] INIT -> LOAD",
+          "[Agent] Loading Capabilities (Pre-loaded)...",
+          "[State] LOAD -> ALLOCATE",
+          "[Agent] Allocating Models...",
+          "[State] ALLOCATE -> MEM_INIT",
+          "[Agent] Initializing Working Memory...",
+          "[State] MEM_INIT -> LOOP",
+          "[Agent] Entering Execution Loop...",
+          "[Pipeline] Step 1/10",
+          "[Cognitive] ⚡ Fast Path: Simple query, skipping Tree of Thoughts...",
+          "[Cognitive] 💭 Thought: \"The task requires calculating the square root of 67890. Since this is a mathematical operation, I can resolve it directly without external dependencies.\"",
+          "[Cognitive] 📋 Plan: [\n  {\n    \"type\": \"final_answer\",\n    \"args\": {\n      \"text\": \"The square root of 67890 is approximately 260.56. 🎉\"\n    }\n  }\n]",
+          "  -> ACT RESULT: The square root of 67890 is approximately 260.56. 🎉",
+          "[Agent] ✅ Task Completed in 30.62s."
+        ],
+        "error": null,
+        "result": "The square root of 67890 is approximately 260.56. 🎉",
+        "latency": 30625
+      }
+    ]
+  }
+]

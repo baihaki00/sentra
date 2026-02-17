@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "Enhanced AI automation platform with improved capabilities over OpenClaw",
   "main": "src/core.js",
+  "bin": {
+    "sentra": "./bin/sentra.js"
+  },
   "scripts": {
-    "start": "node src/core.js",
+    "start": "node src/cli.js",
     "bot": "node src/start_bot.js",
-    "dev": "nodemon src/core.js",
-    "test": "jest",
+    "dev": "nodemon src/cli.js",
+    "test": "node src/test_regression.js",
+    "test:stress": "node src/test_stress.js",
+    "test:e2e": "node src/test_e2e_cli.js",
+    "test:all": "node src/test_regression.js && node src/test_stress.js",
     "lint": "eslint src/",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "sentra": "node src/sentra.js",
+    "sentra:verbose": "node src/sentra.js --verbose"
   },
   "keywords": [
     "ai",

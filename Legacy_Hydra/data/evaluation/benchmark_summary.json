@@ -1,0 +1,24 @@
+{
+  "total": 3,
+  "system_1_count": 0,
+  "system_2_count": 3,
+  "success_count": 3,
+  "total_latency": 291554,
+  "latencies": [
+    30625,
+    30625,
+    230304
+  ],
+  "tools_usage": {
+    "final_answer": 4,
+    "web_search": 1,
+    "web_fetch": 1,
+    "browser_open": 1,
+    "browser_read": 1
+  },
+  "avg_latency": 97184.66666666667,
+  "system_1_pct": 0,
+  "system_2_pct": 100,
+  "success_rate": 100,
+  "p95_latency": 230304
+}

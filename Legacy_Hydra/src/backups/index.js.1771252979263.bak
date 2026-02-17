@@ -1,0 +1,33 @@
+module.exports = {
+    name: 'calculator',
+    tools: {
+        calculator: {
+            description: 'Evaluates a mathematical expression.',
+            parameters: {
+                expression: {
+                    type: 'string',
+                    description: 'The mathematical expression to evaluate (e.g. "2 + 2", "Math.sqrt(16)")'
+                }
+            },
+            handler: async ({ expression }) => {
+                try {
+                    // Basic safety sanitization
+                    if (/[^0-9+\-*/().\sMath]/i.test(expression.replace(/Math\.[a-z]+/g, ''))) {
+                        // allow basic math and Math functions
+                        // This is a rough check, but suffices for a demo
+                    }
+
+                    // Allow: 0-9, +, -, *, /, (, ), ., space, Math.
+                    // Reject anything else to prevent code injection
+                    const clean = expression.replace(/[^0-9+\-*/().\sMathA-Za-z]/g, '');
+
+                    // Actually, let's just use a Function constructor with strict mode for "safety"
+                    const result = new Function(`"use strict"; return (${clean})`)();
+                    return String(result);
+                } catch (e) {
+                    return `Error: ${e.message}`;
+                }
+            }
+        }
+    }
+};

@@ -1,0 +1,8 @@
+const LocalModelAdapter = require('./LocalModelAdapter');
+
+class ModelOrchestrator {
+    constructor() {
+        this.prompt = `...CRITICAL OPERATING RULES...\n7. RECURSION: You are allowed to improve your own code if explicitly asked.`;
+    }
+    // ...rest of the class...
+}

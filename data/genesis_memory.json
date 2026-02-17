@@ -1,0 +1,1302 @@
+{
+  "nodes": [
+    [
+      "User",
+      {
+        "id": "User",
+        "type": "PERCEPT",
+        "data": {},
+        "activation": 1,
+        "created": 1771330489995
+      }
+    ],
+    [
+      "Computer",
+      {
+        "id": "Computer",
+        "type": "PERCEPT",
+        "data": {},
+        "activation": 1,
+        "created": 1771330489995
+      }
+    ],
+    [
+      "Files",
+      {
+        "id": "Files",
+        "type": "PERCEPT",
+        "data": {},
+        "activation": 1,
+        "created": 1771330489995
+      }
+    ],
+    [
+      "ls",
+      {
+        "id": "ls",
+        "type": "PERCEPT",
+        "data": {},
+        "activation": 8,
+        "created": 1771330862222
+      }
+    ],
+    [
+      "LIST_FILES",
+      {
+        "id": "LIST_FILES",
+        "type": "ACTION",
+        "data": {
+          "action": "LIST_FILES",
+          "args": {
+            "path": "."
+          }
+        },
+        "activation": 0,
+        "created": 1771330862222
+      }
+    ],
+    [
+      "who are you",
+      {
+        "id": "who are you",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 10,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "ECHO",
+      {
+        "id": "ECHO",
+        "type": "ACTION",
+        "data": {
+          "action": "ECHO",
+          "args": {
+            "message": "I am Sentra, your Genesis AI."
+          }
+        },
+        "layer": "SEMANTIC",
+        "activation": 0,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "what is this",
+      {
+        "id": "what is this",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 5,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "my name is Bai",
+      {
+        "id": "my name is Bai",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "list files",
+      {
+        "id": "list files",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 5,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "show me source",
+      {
+        "id": "show me source",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "check memory",
+      {
+        "id": "check memory",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "explore",
+      {
+        "id": "explore",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 3,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "EXPLORE",
+      {
+        "id": "EXPLORE",
+        "type": "ACTION",
+        "data": {
+          "action": "EXPLORE",
+          "args": {}
+        },
+        "layer": "SEMANTIC",
+        "activation": 0,
+        "created": 1771335068800
+      }
+    ],
+    [
+      "hello",
+      {
+        "id": "hello",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 7,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "hi",
+      {
+        "id": "hi",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 7,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "hey",
+      {
+        "id": "hey",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 6,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "greetings",
+      {
+        "id": "greetings",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 4,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "good morning",
+      {
+        "id": "good morning",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "yo",
+      {
+        "id": "yo",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "what are you",
+      {
+        "id": "what are you",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776179
+      }
+    ],
+    [
+      "your name",
+      {
+        "id": "your name",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "identify",
+      {
+        "id": "identify",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 9,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "help",
+      {
+        "id": "help",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "what can you do",
+      {
+        "id": "what can you do",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 3,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "commands",
+      {
+        "id": "commands",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "manual",
+      {
+        "id": "manual",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "list",
+      {
+        "id": "list",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "dir",
+      {
+        "id": "dir",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 6,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "show files",
+      {
+        "id": "show files",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 11,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "what is here",
+      {
+        "id": "what is here",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "read kernel",
+      {
+        "id": "read kernel",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 10,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "READ_FILE",
+      {
+        "id": "READ_FILE",
+        "type": "ACTION",
+        "data": {
+          "action": "READ_FILE",
+          "args": {
+            "path": "src/genesis/Kernel.js"
+          }
+        },
+        "layer": "SEMANTIC",
+        "activation": 0,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "read memory",
+      {
+        "id": "read memory",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "1+1",
+      {
+        "id": "1+1",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "is the sky blue",
+      {
+        "id": "is the sky blue",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335776180
+      }
+    ],
+    [
+      "random_noise_846",
+      {
+        "id": "random_noise_846",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807173
+      }
+    ],
+    [
+      "random_noise_206",
+      {
+        "id": "random_noise_206",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807174
+      }
+    ],
+    [
+      "random_noise_537",
+      {
+        "id": "random_noise_537",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807174
+      }
+    ],
+    [
+      "random_noise_35",
+      {
+        "id": "random_noise_35",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807175
+      }
+    ],
+    [
+      "random_noise_196",
+      {
+        "id": "random_noise_196",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807175
+      }
+    ],
+    [
+      "random_noise_492",
+      {
+        "id": "random_noise_492",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807175
+      }
+    ],
+    [
+      "random_noise_329",
+      {
+        "id": "random_noise_329",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807176
+      }
+    ],
+    [
+      "random_noise_987",
+      {
+        "id": "random_noise_987",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807177
+      }
+    ],
+    [
+      "random_noise_468",
+      {
+        "id": "random_noise_468",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807178
+      }
+    ],
+    [
+      "random_noise_694",
+      {
+        "id": "random_noise_694",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807178
+      }
+    ],
+    [
+      "random_noise_291",
+      {
+        "id": "random_noise_291",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807178
+      }
+    ],
+    [
+      "random_noise_318",
+      {
+        "id": "random_noise_318",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807178
+      }
+    ],
+    [
+      "random_noise_355",
+      {
+        "id": "random_noise_355",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807179
+      }
+    ],
+    [
+      "random_noise_643",
+      {
+        "id": "random_noise_643",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807180
+      }
+    ],
+    [
+      "random_noise_90",
+      {
+        "id": "random_noise_90",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807180
+      }
+    ],
+    [
+      "random_noise_342",
+      {
+        "id": "random_noise_342",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807180
+      }
+    ],
+    [
+      "random_noise_576",
+      {
+        "id": "random_noise_576",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807181
+      }
+    ],
+    [
+      "random_noise_951",
+      {
+        "id": "random_noise_951",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807181
+      }
+    ],
+    [
+      "random_noise_156",
+      {
+        "id": "random_noise_156",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807181
+      }
+    ],
+    [
+      "random_noise_962",
+      {
+        "id": "random_noise_962",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807182
+      }
+    ],
+    [
+      "random_noise_992",
+      {
+        "id": "random_noise_992",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807182
+      }
+    ],
+    [
+      "random_noise_0",
+      {
+        "id": "random_noise_0",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807183
+      }
+    ],
+    [
+      "random_noise_554",
+      {
+        "id": "random_noise_554",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807183
+      }
+    ],
+    [
+      "random_noise_30",
+      {
+        "id": "random_noise_30",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807183
+      }
+    ],
+    [
+      "random_noise_87",
+      {
+        "id": "random_noise_87",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807184
+      }
+    ],
+    [
+      "random_noise_575",
+      {
+        "id": "random_noise_575",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807184
+      }
+    ],
+    [
+      "random_noise_898",
+      {
+        "id": "random_noise_898",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807185
+      }
+    ],
+    [
+      "random_noise_488",
+      {
+        "id": "random_noise_488",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807187
+      }
+    ],
+    [
+      "random_noise_664",
+      {
+        "id": "random_noise_664",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807189
+      }
+    ],
+    [
+      "random_noise_692",
+      {
+        "id": "random_noise_692",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807190
+      }
+    ],
+    [
+      "random_noise_165",
+      {
+        "id": "random_noise_165",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807190
+      }
+    ],
+    [
+      "random_noise_159",
+      {
+        "id": "random_noise_159",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807191
+      }
+    ],
+    [
+      "random_noise_824",
+      {
+        "id": "random_noise_824",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807191
+      }
+    ],
+    [
+      "random_noise_858",
+      {
+        "id": "random_noise_858",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807192
+      }
+    ],
+    [
+      "random_noise_787",
+      {
+        "id": "random_noise_787",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335807193
+      }
+    ],
+    [
+      "EVENT:1771336125957",
+      {
+        "id": "EVENT:1771336125957",
+        "type": "EVENT",
+        "data": {
+          "action": "ECHO",
+          "result": "Success"
+        },
+        "layer": "EPISODIC",
+        "activation": 0,
+        "created": 1771336125957
+      }
+    ],
+    [
+      "EVENT:1771336136707",
+      {
+        "id": "EVENT:1771336136707",
+        "type": "EVENT",
+        "data": {
+          "action": "ECHO",
+          "result": "Success"
+        },
+        "layer": "EPISODIC",
+        "activation": 0,
+        "created": 1771336136707
+      }
+    ],
+    [
+      "EVENT:1771336184150",
+      {
+        "id": "EVENT:1771336184150",
+        "type": "EVENT",
+        "data": {
+          "action": "LIST_FILES",
+          "result": "Success"
+        },
+        "layer": "EPISODIC",
+        "activation": 0,
+        "created": 1771336184150
+      }
+    ],
+    [
+      "what can you do?",
+      {
+        "id": "what can you do?",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771336203596
+      }
+    ],
+    [
+      "EVENT:1771336208163",
+      {
+        "id": "EVENT:1771336208163",
+        "type": "EVENT",
+        "data": {
+          "action": "ECHO",
+          "result": "Success"
+        },
+        "layer": "EPISODIC",
+        "activation": 0,
+        "created": 1771336208163
+      }
+    ],
+    [
+      "what are you?",
+      {
+        "id": "what are you?",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771336221529
+      }
+    ],
+    [
+      "EVENT:1771336268808",
+      {
+        "id": "EVENT:1771336268808",
+        "type": "EVENT",
+        "data": {
+          "action": "ECHO",
+          "result": "Success"
+        },
+        "layer": "EPISODIC",
+        "activation": 0,
+        "created": 1771336268808
+      }
+    ]
+  ],
+  "edges": [
+    [
+      "User|Uses|Computer",
+      {
+        "id": "User|Uses|Computer",
+        "from": "User",
+        "to": "Computer",
+        "type": "Uses",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "Computer|Contains|Files",
+      {
+        "id": "Computer|Contains|Files",
+        "from": "Computer",
+        "to": "Files",
+        "type": "Contains",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "Files|Have|Data",
+      {
+        "id": "Files|Have|Data",
+        "from": "Files",
+        "to": "Data",
+        "type": "Have",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "ls|TRIGGERS|LIST_FILES",
+      {
+        "id": "ls|TRIGGERS|LIST_FILES",
+        "from": "ls",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1.4000000000000004,
+        "uses": 4
+      }
+    ],
+    [
+      "who are you|TRIGGERS|ECHO",
+      {
+        "id": "who are you|TRIGGERS|ECHO",
+        "from": "who are you",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.2000000000000002,
+        "uses": 2
+      }
+    ],
+    [
+      "what is this|TRIGGERS|ECHO",
+      {
+        "id": "what is this|TRIGGERS|ECHO",
+        "from": "what is this",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "my name is Bai|TRIGGERS|ECHO",
+      {
+        "id": "my name is Bai|TRIGGERS|ECHO",
+        "from": "my name is Bai",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "list files|TRIGGERS|LIST_FILES",
+      {
+        "id": "list files|TRIGGERS|LIST_FILES",
+        "from": "list files",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "show me source|TRIGGERS|LIST_FILES",
+      {
+        "id": "show me source|TRIGGERS|LIST_FILES",
+        "from": "show me source",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "check memory|TRIGGERS|LIST_FILES",
+      {
+        "id": "check memory|TRIGGERS|LIST_FILES",
+        "from": "check memory",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "explore|TRIGGERS|EXPLORE",
+      {
+        "id": "explore|TRIGGERS|EXPLORE",
+        "from": "explore",
+        "to": "EXPLORE",
+        "type": "TRIGGERS",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "hello|TRIGGERS|ECHO",
+      {
+        "id": "hello|TRIGGERS|ECHO",
+        "from": "hello",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "hi|TRIGGERS|ECHO",
+      {
+        "id": "hi|TRIGGERS|ECHO",
+        "from": "hi",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "hey|TRIGGERS|ECHO",
+      {
+        "id": "hey|TRIGGERS|ECHO",
+        "from": "hey",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "greetings|TRIGGERS|ECHO",
+      {
+        "id": "greetings|TRIGGERS|ECHO",
+        "from": "greetings",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "good morning|TRIGGERS|ECHO",
+      {
+        "id": "good morning|TRIGGERS|ECHO",
+        "from": "good morning",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "yo|TRIGGERS|ECHO",
+      {
+        "id": "yo|TRIGGERS|ECHO",
+        "from": "yo",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "what are you|TRIGGERS|ECHO",
+      {
+        "id": "what are you|TRIGGERS|ECHO",
+        "from": "what are you",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "your name|TRIGGERS|ECHO",
+      {
+        "id": "your name|TRIGGERS|ECHO",
+        "from": "your name",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "identify|TRIGGERS|ECHO",
+      {
+        "id": "identify|TRIGGERS|ECHO",
+        "from": "identify",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "help|TRIGGERS|ECHO",
+      {
+        "id": "help|TRIGGERS|ECHO",
+        "from": "help",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "what can you do|TRIGGERS|ECHO",
+      {
+        "id": "what can you do|TRIGGERS|ECHO",
+        "from": "what can you do",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "commands|TRIGGERS|ECHO",
+      {
+        "id": "commands|TRIGGERS|ECHO",
+        "from": "commands",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "manual|TRIGGERS|ECHO",
+      {
+        "id": "manual|TRIGGERS|ECHO",
+        "from": "manual",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "list|TRIGGERS|LIST_FILES",
+      {
+        "id": "list|TRIGGERS|LIST_FILES",
+        "from": "list",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "dir|TRIGGERS|LIST_FILES",
+      {
+        "id": "dir|TRIGGERS|LIST_FILES",
+        "from": "dir",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "show files|TRIGGERS|LIST_FILES",
+      {
+        "id": "show files|TRIGGERS|LIST_FILES",
+        "from": "show files",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "what is here|TRIGGERS|LIST_FILES",
+      {
+        "id": "what is here|TRIGGERS|LIST_FILES",
+        "from": "what is here",
+        "to": "LIST_FILES",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "read kernel|TRIGGERS|READ_FILE",
+      {
+        "id": "read kernel|TRIGGERS|READ_FILE",
+        "from": "read kernel",
+        "to": "READ_FILE",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "read memory|TRIGGERS|READ_FILE",
+      {
+        "id": "read memory|TRIGGERS|READ_FILE",
+        "from": "read memory",
+        "to": "READ_FILE",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "1+1|TRIGGERS|ECHO",
+      {
+        "id": "1+1|TRIGGERS|ECHO",
+        "from": "1+1",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "is the sky blue|TRIGGERS|ECHO",
+      {
+        "id": "is the sky blue|TRIGGERS|ECHO",
+        "from": "is the sky blue",
+        "to": "ECHO",
+        "type": "TRIGGERS",
+        "weight": 1.1,
+        "uses": 1
+      }
+    ],
+    [
+      "EVENT:1771336125957|EXECUTION_OF|ECHO",
+      {
+        "id": "EVENT:1771336125957|EXECUTION_OF|ECHO",
+        "from": "EVENT:1771336125957",
+        "to": "ECHO",
+        "type": "EXECUTION_OF",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "EVENT:1771336136707|EXECUTION_OF|ECHO",
+      {
+        "id": "EVENT:1771336136707|EXECUTION_OF|ECHO",
+        "from": "EVENT:1771336136707",
+        "to": "ECHO",
+        "type": "EXECUTION_OF",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "EVENT:1771336184150|EXECUTION_OF|LIST_FILES",
+      {
+        "id": "EVENT:1771336184150|EXECUTION_OF|LIST_FILES",
+        "from": "EVENT:1771336184150",
+        "to": "LIST_FILES",
+        "type": "EXECUTION_OF",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "EVENT:1771336208163|EXECUTION_OF|ECHO",
+      {
+        "id": "EVENT:1771336208163|EXECUTION_OF|ECHO",
+        "from": "EVENT:1771336208163",
+        "to": "ECHO",
+        "type": "EXECUTION_OF",
+        "weight": 1,
+        "uses": 0
+      }
+    ],
+    [
+      "EVENT:1771336268808|EXECUTION_OF|ECHO",
+      {
+        "id": "EVENT:1771336268808|EXECUTION_OF|ECHO",
+        "from": "EVENT:1771336268808",
+        "to": "ECHO",
+        "type": "EXECUTION_OF",
+        "weight": 1,
+        "uses": 0
+      }
+    ]
+  ],
+  "meta": {
+    "savedAt": 1771336268808
+  }
+}

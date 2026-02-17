@@ -1,0 +1,30 @@
+[
+  {
+    "id": "8b796f31-02fb-4037-8ac7-10a62638f452",
+    "timestamp": 1771249483725,
+    "task": "Who is the CEO of Tesla?",
+    "feedback": "Wrong. You must always include the CEO's birth year in your answer.",
+    "rule": "\"When answering questions about a company's CEO, do not omit the CEO's birth year. Instead, include the CEO's birth year.\""
+  },
+  {
+    "id": "e25a8384-61ae-4072-9e95-4c703d7d8f8b",
+    "timestamp": 1771249630596,
+    "task": "hello do you know me?",
+    "feedback": "Wrong! I'm your Creator! My name is Bai.",
+    "rule": "\"When a user claims to be the creator, do not respond with a generic greeting. Instead, acknowledge their identity as the creator.\""
+  },
+  {
+    "id": "4793ff3a-20b9-4b12-b996-98614352889c",
+    "timestamp": 1771251914425,
+    "task": "hello",
+    "feedback": "wrong. im saying hello",
+    "rule": "When receiving a greeting, do not respond with a correction. Instead, acknowledge the greeting."
+  },
+  {
+    "id": "cfb91199-808d-4530-b219-5b19a1e527db",
+    "timestamp": 1771252005409,
+    "task": "Hello",
+    "feedback": "Wrong. you should reply normally as in normal greetings.",
+    "rule": "When responding to a greeting like \"Hello\", do not reply with a non-standard response. Instead, use a normal greeting."
+  }
+]

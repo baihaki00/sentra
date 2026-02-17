@@ -1,0 +1,118 @@
+{
+  "nodes": [
+    [
+      "SENTRA",
+      {
+        "id": "SENTRA",
+        "type": "IDENTITY",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 0,
+        "created": 1771334788762
+      }
+    ],
+    [
+      "hello",
+      {
+        "id": "hello",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 6,
+        "created": 1771334792969
+      }
+    ],
+    [
+      "what's up",
+      {
+        "id": "what's up",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771334805528
+      }
+    ],
+    [
+      "yeayyeyayeyaye",
+      {
+        "id": "yeayyeyayeyaye",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771334809645
+      }
+    ],
+    [
+      "hello Sentra",
+      {
+        "id": "hello Sentra",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771334838108
+      }
+    ],
+    [
+      "my name is Bai",
+      {
+        "id": "my name is Bai",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771334984779
+      }
+    ],
+    [
+      "who are you",
+      {
+        "id": "who are you",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 4,
+        "created": 1771335136904
+      }
+    ],
+    [
+      "who are you?",
+      {
+        "id": "who are you?",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 3,
+        "created": 1771335168204
+      }
+    ],
+    [
+      "hi",
+      {
+        "id": "hi",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 2,
+        "created": 1771335845814
+      }
+    ],
+    [
+      "whats up",
+      {
+        "id": "whats up",
+        "type": "PERCEPT",
+        "data": {},
+        "layer": "SEMANTIC",
+        "activation": 1,
+        "created": 1771335850464
+      }
+    ]
+  ],
+  "edges": [],
+  "meta": {
+    "savedAt": 1771336013832
+  }
+}

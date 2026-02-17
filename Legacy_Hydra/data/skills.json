@@ -1,0 +1,447 @@
+[
+  {
+    "id": "find_ceo",
+    "description": "Finds the CEO of a company",
+    "parameters": [
+      "company"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "args": {
+          "query": "CEO of {{company}}"
+        }
+      }
+    ]
+  },
+  {
+    "id": "compare_asset_prices",
+    "description": "Compares prices of two assets and identifies which is higher",
+    "parameters": [
+      "asset1",
+      "asset2"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "args": {
+          "query": "current price of {{asset1}} vs {{asset2}}"
+        }
+      }
+    ]
+  },
+  {
+    "id": "get_latest_news",
+    "description": "Fetches the latest news about a specified person or topic",
+    "parameters": [
+      "subject"
+    ],
+    "plan": [
+      {
+        "type": "final_answer"
+      },
+      {
+        "type": "web_search",
+        "query": "{{subject}}"
+      },
+      {
+        "type": "web_fetch"
+      },
+      {
+        "type": "browser_open"
+      },
+      {
+        "type": "browser_read"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "create_csv_file",
+    "description": "Creates a CSV file with specified content",
+    "parameters": [
+      "filename",
+      "content"
+    ],
+    "plan": [
+      {
+        "type": "final_answer"
+      },
+      {
+        "type": "web_search"
+      },
+      {
+        "type": "web_fetch"
+      },
+      {
+        "type": "browser_open"
+      },
+      {
+        "type": "browser_read"
+      },
+      {
+        "type": "final_answer"
+      },
+      {
+        "type": "write_code",
+        "code": "with open('{{filename}}', 'w') as f: f.write('{{content}}')"
+      }
+    ]
+  },
+  {
+    "id": "find_person_news",
+    "description": "Finds the latest news about a specified person",
+    "parameters": [
+      "name"
+    ],
+    "plan": [
+      {
+        "type": "final_answer"
+      },
+      {
+        "type": "web_search",
+        "query": "{{name}}"
+      },
+      {
+        "type": "web_fetch"
+      },
+      {
+        "type": "browser_open"
+      },
+      {
+        "type": "browser_read"
+      },
+      {
+        "type": "final_answer"
+      },
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "web_search",
+        "query": "{{name}}"
+      }
+    ]
+  },
+  {
+    "id": "compute_factorial",
+    "description": "Computes the factorial of a number",
+    "parameters": [
+      "n"
+    ],
+    "plan": [
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "implement_binary_search",
+    "description": "Implements a binary search algorithm",
+    "parameters": [],
+    "plan": [
+      {
+        "type": "write_code",
+        "code": "function binarySearch(arr, target) { let left = 0, right = arr.length - 1; while (left <= right) { const mid = Math.floor((left + right) / 2); if (arr[mid] === target) return mid; else if (arr[mid] < target) left = mid + 1; else right = mid - 1; } return -1; }"
+      },
+      {
+        "type": "final_answer",
+        "answer": "The binary search function has been implemented to find a target in a sorted array."
+      }
+    ]
+  },
+  {
+    "id": "check_company_founding_date",
+    "description": "Finds the founding date of a company",
+    "parameters": [
+      "company"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "query": "founding date of {{company}}"
+      },
+      {
+        "type": "final_answer",
+        "value": "{{result}}"
+      }
+    ]
+  },
+  {
+    "id": "check_asset_price",
+    "description": "Checks price of an asset",
+    "parameters": [
+      "asset"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "content": "Fetch stock price for {{asset}}"
+      },
+      {
+        "type": "final_answer",
+        "content": "The stock price for {{asset}} is..."
+      }
+    ]
+  },
+  {
+    "id": "read_csv_file",
+    "description": "Reads a CSV file into a script",
+    "parameters": [
+      "file"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "content": "Create a script to read {{file}} using JavaScript"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "determine_travelers",
+    "description": "Determines who is traveling when two individuals meet in a location",
+    "parameters": [
+      "person1",
+      "person2",
+      "location"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "query": "travel itineraries of {{person1}} to {{location}}"
+      },
+      {
+        "type": "web_search",
+        "query": "travel itineraries of {{person2}} to {{location}}"
+      },
+      {
+        "type": "web_fetch",
+        "url": "https://example.com/travel-api?location={{location}}"
+      },
+      {
+        "type": "final_answer",
+        "value": "Both {{person1}} and {{person2}} are traveling to {{location}} to meet."
+      }
+    ]
+  },
+  {
+    "id": "find_city_capital",
+    "description": "Finds the capital of a given city",
+    "parameters": [
+      "city"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "query": "capital of {{city}}"
+      },
+      {
+        "type": "web_fetch",
+        "url": "https://en.wikipedia.org/wiki/{{city}}"
+      },
+      {
+        "type": "final_answer",
+        "value": "The capital of {{city}} is..."
+      }
+    ]
+  },
+  {
+    "id": "determine_traveling_person",
+    "description": "Determines who is traveling in a meeting scenario involving two individuals",
+    "parameters": [
+      "person",
+      "location"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "variable": "{{person}}"
+      },
+      {
+        "type": "final_answer",
+        "variable": "{{person}}"
+      }
+    ]
+  },
+  {
+    "id": "create_config_file",
+    "description": "Creates a configuration file with specified content",
+    "parameters": [
+      "filename",
+      "content"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "code": "with open('{{filename}}', 'w') as f: f.write('{{content}}')"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "read_text_file",
+    "description": "Reads a text file using JavaScript",
+    "parameters": [
+      "file_name"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "content": "// JavaScript code to read {{file_name}}\nconst fs = require('fs');\nfs.readFile('{{file_name}}', 'utf8', (err, data) => {\n  if (err) throw err;\n  console.log(data);\n});"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "determine_traveler",
+    "description": "Determines who is traveling when two individuals meet in a specific location",
+    "parameters": [
+      "person1",
+      "person2",
+      "location"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "query": "{{person1}} meets {{person2}} in {{location}}"
+      },
+      {
+        "type": "web_fetch",
+        "url": "https://example.com/news?query={{person1}}+{{person2}}+{{location}}"
+      },
+      {
+        "type": "browser_open",
+        "url": "https://example.com/news?query={{person1}}+{{person2}}+{{location}}"
+      },
+      {
+        "type": "browser_read",
+        "selector": "div.article-content"
+      },
+      {
+        "type": "write_code",
+        "code": "parse_traveler_info(...)"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "find_company_founding_date",
+    "description": "Finds the founding date of a company",
+    "parameters": [
+      "company"
+    ],
+    "plan": [
+      {
+        "type": "web_search",
+        "query": "when was {{company}} founded"
+      },
+      {
+        "type": "web_fetch",
+        "url": "https://www.google.com/search?q=when+was+{{company}}+founded"
+      },
+      {
+        "type": "browser_open",
+        "url": "https://www.google.com/search?q=when+was+{{company}}+founded"
+      },
+      {
+        "type": "browser_read",
+        "selector": "//div[@class='gs-result']"
+      },
+      {
+        "type": "write_code",
+        "code": "parse_search_results"
+      },
+      {
+        "type": "final_answer",
+        "value": "{{parsed_founding_date}}"
+      }
+    ]
+  },
+  {
+    "id": "find_latest_news",
+    "description": "Fetches the latest news about a specified subject.",
+    "parameters": [
+      "subject"
+    ],
+    "plan": [
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "implement_algorithm",
+    "description": "Implements a specified algorithm in Python",
+    "parameters": [
+      "algorithm"
+    ],
+    "plan": [
+      {
+        "type": "write_code"
+      },
+      {
+        "type": "final_answer"
+      }
+    ]
+  },
+  {
+    "id": "calculate_square_root",
+    "description": "Calculates the square root of a given number",
+    "parameters": [
+      "number"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "code": "import math\nresult = math.sqrt({{number}})\nprint(result)"
+      },
+      {
+        "type": "final_answer",
+        "answer": "{{number}} is a perfect square. The square root is 1000."
+      }
+    ]
+  },
+  {
+    "id": "delete_file",
+    "description": "Deletes a specified file",
+    "parameters": [
+      "filename"
+    ],
+    "plan": [
+      {
+        "type": "write_code",
+        "code": "import os\nos.remove('{{filename}}')"
+      },
+      {
+        "type": "final_answer",
+        "answer": "File '{{filename}}' deleted successfully."
+      }
+    ]
+  }
+]

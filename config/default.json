@@ -14,12 +14,16 @@
   "models": {
     "default": "qwen-portal/coder-model",
     "fallback": "ollama/gemma3:4b",
-    "maxConcurrency": 4
+    "maxConcurrency": 4,
+    "evolution_mode": "assisted"
   },
   "plugins": {
     "enabled": true,
     "autoLoad": true,
-    "directories": ["./plugins", "./custom-plugins"]
+    "directories": [
+      "./plugins",
+      "./custom-plugins"
+    ]
   },
   "memory": {
     "maxSizeMB": 1024,

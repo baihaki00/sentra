@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-02-16T17:51:15.057Z",
+  "passed": 37,
+  "failed": 3,
+  "failures": [
+    "Agent recovers from bad model output",
+    "Recovers from ERROR state",
+    "Abort signal was set"
+  ],
+  "timings": [
+    {
+      "name": "Full initialization",
+      "time": 96
+    },
+    {
+      "name": "Simple task lifecycle",
+      "time": 5245
+    },
+    {
+      "name": "5 sequential tasks",
+      "time": 27509
+    },
+    {
+      "name": "10 burst tasks",
+      "time": 376
+    }
+  ],
+  "totalTimeMs": 81297
+}

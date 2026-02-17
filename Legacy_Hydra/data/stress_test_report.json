@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-02-16T17:49:42.517Z",
+  "summary": {
+    "total": 62,
+    "passed": 62,
+    "failed": 0,
+    "warnings": 0,
+    "totalTimeMs": 586
+  },
+  "benchmarks": [
+    {
+      "name": "Absurd: Build a rocket ship for me...",
+      "elapsed": 1
+    },
+    {
+      "name": "Absurd: Create an AI that passes the T...",
+      "elapsed": 0
+    },
+    {
+      "name": "Absurd: Hack into NASA's mainframe and...",
+      "elapsed": 0
+    },
+    {
+      "name": "Absurd: Write an operating system from...",
+      "elapsed": 0
+    },
+    {
+      "name": "Absurd: Solve world hunger using only ...",
+      "elapsed": 0
+    },
+    {
+      "name": "Absurd: Travel back in time and preven...",
+      "elapsed": 0
+    },
+    {
+      "name": "MultiStep: What is the current price of B...",
+      "elapsed": 0
+    },
+    {
+      "name": "MultiStep: Compare the performance of Nod...",
+      "elapsed": 0
+    },
+    {
+      "name": "MultiStep: Find the top 3 most cited pape...",
+      "elapsed": 0
+    },
+    {
+      "name": "Memory: Bulk write 100 items",
+      "elapsed": 334
+    },
+    {
+      "name": "Memory: Search 104 items",
+      "elapsed": 0
+    },
+    {
+      "name": "Performance: 20x deliberateTree",
+      "elapsed": 0
+    },
+    {
+      "name": "Performance: 100x state transitions",
+      "elapsed": 0
+    },
+    {
+      "name": "Performance: 2000x working memory ops",
+      "elapsed": 0
+    },
+    {
+      "name": "Abort: Normal execution",
+      "elapsed": 0
+    }
+  ],
+  "failures": [],
+  "warnings": []
+}

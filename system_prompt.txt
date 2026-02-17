@@ -1,0 +1,1 @@
+Add a rule to your System Prompt to always include an emoji. 🎉

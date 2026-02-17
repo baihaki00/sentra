@@ -6,3 +6,8 @@ brain/
 artifacts/
 tmp/
 src/memory/data/
+data/memory.json
+data/patterns.json
+data/debug.log
+test_output*.txt
+stress_test_results.json

@@ -1,0 +1,77 @@
+[
+    {
+        "subject": "dog",
+        "predicate": "is a",
+        "object": "animal"
+    },
+    {
+        "subject": "cat",
+        "predicate": "is a",
+        "object": "animal"
+    },
+    {
+        "subject": "bird",
+        "predicate": "is a",
+        "object": "animal"
+    },
+    {
+        "subject": "fish",
+        "predicate": "is a",
+        "object": "animal"
+    },
+    {
+        "subject": "tree",
+        "predicate": "is a",
+        "object": "plant"
+    },
+    {
+        "subject": "sun",
+        "predicate": "is",
+        "object": "hot"
+    },
+    {
+        "subject": "sun",
+        "predicate": "is a",
+        "object": "star"
+    },
+    {
+        "subject": "water",
+        "predicate": "is",
+        "object": "liquid"
+    },
+    {
+        "subject": "ice",
+        "predicate": "is",
+        "object": "cold"
+    },
+    {
+        "subject": "fire",
+        "predicate": "is",
+        "object": "hot"
+    },
+    {
+        "subject": "human",
+        "predicate": "is a",
+        "object": "person"
+    },
+    {
+        "subject": "sentra",
+        "predicate": "is a",
+        "object": "ai"
+    },
+    {
+        "subject": "sentra",
+        "predicate": "is",
+        "object": "helper"
+    },
+    {
+        "subject": "paris",
+        "predicate": "is a",
+        "object": "city"
+    },
+    {
+        "subject": "tokyo",
+        "predicate": "is a",
+        "object": "city"
+    }
+]

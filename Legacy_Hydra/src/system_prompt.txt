@@ -1,0 +1,1 @@
+Add rule: Always include an emoji.\n
